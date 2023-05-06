@@ -1,0 +1,346 @@
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: iranyekan;
+  src: url(./assets/font/iranyekanwebbold.woff);
+}
+
+@font-face {
+  font-family: iransansnum;
+  src: url(./assets/font/IRANSansDNFaNum2.woff);
+}
+
+body {
+  font-family: iransansnum;
+  text-align: center;
+  max-width: 430px;
+  background-image: url(./assets/images/pattern-min.png), linear-gradient(to right,#30204c, #0b0116);
+  background-attachment: fixed;
+  background-size: cover;
+  margin: auto;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* start landing page */
+
+#start-landing {
+  margin-top: 15%;
+}
+
+#title {
+  width: 40%;
+  height:fit-content;
+  margin: 7% 5% 0% 0%;
+}
+
+#help {
+  width: 19%;
+  height:fit-content;
+  margin: 6% 0% 0% 5%;
+}
+
+#info {
+  width: 80%;
+  margin: auto;
+}
+
+#start-button {
+  width: 50%;
+  margin-top: 5%;
+}
+
+/* landing */
+
+/* .landing {
+  max-width: 95%;
+  margin: auto;
+} */
+
+#notice {
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  position: relative;
+}
+
+#notice img {
+  max-width: 100%;
+}
+
+.my-game-button {
+  width: 47%;
+  position: absolute;
+  left: 26%;
+  top: 75%;
+}
+
+/* ------------------ */
+
+
+/* loading */
+
+#loading {
+  position: fixed;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: auto;
+}
+
+
+
+/* ------------------ */
+
+
+
+/* progress bar */
+
+.progress-bar-container {
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+
+.rate-progress-container{
+  margin: auto;
+  width: 100%;
+  height: 25px;
+  margin-top: 5%;
+  display: flex;
+}
+
+.rate-progress-container img {
+  width: 6%;
+  top: 1%;
+}
+
+#first-rate-pic{
+  position: absolute;
+  left: 27%;
+}
+
+#second-rate-pic{
+  position: absolute;
+  left: 51%;
+}
+
+#third-rate-pic{
+  position: absolute;
+  left: 100%;
+}
+
+
+.gold-number{
+  color: white;
+  font-family: iransansnum;
+  font-size: 16px;
+}
+
+#first-gold-number{
+  position: absolute;
+  left: 20%;
+}
+
+#second-gold-number{
+  position: absolute;
+  left: 43%;
+}
+
+#third-gold-number{
+  position: absolute;
+  left: 93%;
+}
+
+
+#progress-bar{
+  width:100%;
+  height: 28px;
+  border-radius: 7px;
+  background-image: linear-gradient(to top, #f2f2f2 0% , #f2f2f2 50% , #d4d4d4 50% , #d4d4d4 100% );
+  display: flex;
+}
+
+#pr-bars {
+  background-image: linear-gradient(to top, #81ff8d 0% , #81ff8d 50% , #2aeb3c 50% , #2aeb3c 100% );
+  border-radius: 7px;
+}
+
+#line-container{
+  position: absolute;
+  width: 25%;
+  height: 28px;
+  left: 25%;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+}
+
+#get-coin {
+  width: 100%;
+  position: absolute;
+  animation-name: coinget;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#get-coin.deactive {
+  display: none;
+}
+
+.coins {
+  width: 30%;
+  position: absolute;
+  z-index: 5;
+}
+
+.coins img {
+  max-width: 100%;
+}
+
+.coins.deactive {
+  display: none;
+}
+
+.getcoin1 {
+  left: 10%;;
+}
+
+.getcoin2 {
+  left: 34.5%;
+}
+
+.getcoin3 {
+  left: 85%;
+}
+
+@keyframes coinget {
+  0% {top: 0%;}
+  100% {top: 30%;}
+}
+
+
+#score{
+  font-family: iransansnum;
+  font-weight: 750;
+  font-size: 17px;
+  position: absolute;
+  color: #1c4b43;
+  left: 45.5%;
+  z-index: 3;
+}
+
+
+#score-container {
+  width: 100%;
+  margin-top: -2%;
+}
+
+.tik-class {
+  width: 30%;
+  display: inline-block;
+  margin-top: -2.5%;
+  position: absolute;
+}
+
+.tik-class img {
+  max-width: 100%;
+}
+
+.box-1 {
+  left: 10.25%;
+}
+
+.box-2 {
+  left: 34.75%;
+}
+
+.box-3 {
+  left: 85%;
+}
+
+.green {
+  width: 60%;
+}
+
+.green1 {
+  left: 5%;
+}
+
+.tik.deactive {
+  display: none;
+}
+
+/* ----------------- */
+
+/* modal popup */
+
+
+.popup {
+  position: fixed;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  overflow: auto;
+}
+
+.pop-container {
+  width: 95%;
+  margin: auto;
+  position: relative;
+  top: 15%;
+}
+
+.close-button {
+  position: absolute;
+  width: 11%;
+  top: 1.5%;
+  left: 85%;
+}
+
+.close-button img {
+  max-width: 100%;
+}
+
+.my-games-modal {
+  width: 100%;
+}
+
+.my-games-modal img {
+  width: 100%;
+}
+
+.ok-button {
+  position: absolute;
+  width: 65%;
+  margin: auto;
+  left: 18%;
+  top: 82%;
+}
+
+.ok-button img {
+  width: 100%;
+}
+
+@media (min-width: 430px) {
+
+ .pop-container {
+      width: 420px;
+  }
+}
